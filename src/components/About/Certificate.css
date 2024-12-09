@@ -1,0 +1,39 @@
+.icon-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px; /* Creates space for the hover text below the icon */
+  }
+  
+  .icon {
+    font-size: 3em; /* Icon size */
+    color: inherit; /* Inherit color from parent or default */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon */
+    color: #007bff; /* Change to a hover color */
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: calc(95% + 5px); /* Position below the icon with a gap */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #a1eb2a; /* Background color */
+    color: #3417d8; /* Text color */
+    padding: 3px 8px; /* Padding for the text bar */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.2em; /* Small font size */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .icon-container:hover .hover-text {
+    opacity: 1; /* Make visible on hover */
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Smooth appearance */
+  }
+  

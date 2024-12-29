@@ -26,7 +26,7 @@ function Certificate() {
       <Col xs={4} md={2} className="tech-icons">
         <div className="icon-container">
           <a
-            href="https://www.credly.com/badges/df020053-5a76-4b24-8530-21d55d8050ea/linked_in_profile"
+            href="https://www.credly.com/badges/b39ab5b7-3ad3-41b0-94b6-452171d63d37/public_url"
             target="_blank"
             rel="noopener noreferrer"
           >
